@@ -1,81 +1,15 @@
 <script setup>
-import { ref } from 'vue'
-
-const allCards = ref([
-  {
-    passCode: 'ADMIT_1',
-    wxrdtype: '',
-    localDescription: '',
-    uuid: '',
-    image: '/Myriad_Central.png',
-  },
-  {
-    passCode: 'ADMITONE',
-    wxrdtype: '',
-    localDescription: '',
-    uuid: '',
-    image: '/ADMITONE-aee5.png',
-  },
-  {
-    passCode: 'BAOLG1',
-    wxrdtype: '',
-    localDescription: 'Builders Association Ov Layered Generalists',
-    uuid: '',
-    image: '/BAOLG-97eb.png',
-  },
-  {
-    passCode: 'BAOLG2',
-    wxrdtype: '',
-    localDescription: 'Builders Association Ov Layered Generalists',
-    uuid: '',
-    image: '/BAOLG-0c83.png',
-  },
-  {
-    passCode: 'JUSBEU',
-    wxrdtype: '',
-    localDescription: 'A Space To Connect To Source, A Place To Find Your Self',
-    uuid: '',
-    image: '/JUSBEU-60ad_CARD2.png',
-  },
-  {
-    passCode: 'PLAY',
-    wxrdtype: '',
-    localDescription: 'A Place 4 Musicians 2 Play',
-    uuid: '',
-    image: '/PLAY-4249.png',
-  },
-  {
-    passCode: 'STS',
-    wxrdtype: '',
-    localDescription: 'Shepton Transmission Services',
-    uuid: '',
-    image: '/STS-3ff9.png',
-  },
-  {
-    passCode: 'MCCU',
-    wxrdtype: '',
-    localDescription: 'Myriad Central Credit Union - Giving Credit Where Credit Is Due',
-    uuid: '',
-    image: '',
-  },
-  {
-    passCode: 'AMOS',
-    wxrdtype: '',
-    localDescription: 'A Myriad Ov Services',
-    uuid: '',
-    image: '',
-  },
-  {
-    passCode: 'CGBA',
-    wxrdtype: '',
-    localDescription: 'Coventry Grove Builders Association',
-    uuid: '',
-    image: '',
-  },
-])
+import { allCards } from './allCards'
 </script>
 
 <template>
+  <h1>"cArds OnThA tAble"</h1>
+  <p mt-4 text-sm>
+    The definitive way to see all "installed" cards on a particular MCN (Myriad Central Node). Anywhere within the Myriad EcoSysTem try typing "CARDS" to see your available options :)
+  </p>
+  <div class="card">
+    <img src="https://madamadam.s3.us-east-2.amazonaws.com/CARDS-6752_CARD.png">
+  </div>
   <p mt-4 text-sm>
     <span opacity-75>Recently attempts:</span>
     <ul>
@@ -91,21 +25,6 @@ const allCards = ref([
       </li>
     </ul>
   </p>
-
-  <!-- <p>
-    Wxrds
-  </p>
-
-  <StepInStone
-    v-for="wxrd in testWxrds"
-    :key="wxrd.uuid"
-    :uuid="wxrd.uuid"
-    :wxrdvalue="wxrd.wxrdvalue"
-    :wxrdtype="wxrd.wxrdtype"
-    :content="wxrd.content"
-    :related="wxrd.related"
-    :image="wxrd.image"
-  /> -->
 </template>
 
 <style>
